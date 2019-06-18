@@ -1,0 +1,928 @@
+* {
+	box-sizing: border-box;
+
+}
+
+body {
+	padding: 0;
+	margin: 0.5px;
+
+
+}
+
+html {
+	font-size: 62.5%;
+
+}
+
+
+img {
+	max-width: 100%;
+}
+
+
+.h1boks {
+	background-image: url(images/overskrift-baggrund.svg);
+	background-size: contain;
+	background-position: center;
+	height: 100%;
+	background-repeat: no-repeat;
+	width: 100%;
+	align-content: center;
+
+}
+
+
+
+.h1boks h1 {
+	text-align: center;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 3rem;
+
+
+}
+
+/*Burgermenu*/
+.hidden {
+	display: none;
+
+}
+
+#menu {
+	background-color: rgba(6, 101, 139, 0.85);
+	width: 50vw;
+	max-width: 30vw;
+	height: 55vh;
+	position: absolute;
+	position: fixed;
+	z-index: 10;
+	text-align: center;
+	right: 0;
+	top: 6rem;
+
+
+
+
+}
+
+#menu p {
+	font-family: 'Contrail One', cursive;
+}
+
+
+
+
+h3 {
+
+	font-size: 2rem;
+	font-family: 'Contrail One', cursive;
+}
+
+h2 {
+	font-size: 3rem;
+
+	font-family: 'Contrail One', cursive;
+}
+
+.col_small h2 {
+	border-bottom: 0.75px solid black;
+
+}
+
+
+#burger_knap {
+	color: white;
+	font-size: 2.5rem;
+	margin-right: 1rem;
+	margin-top: 0.3rem;
+	margin-left: 1rem;
+	position: relative;
+	cursor: pointer;
+	font-family: 'Contrail One', cursive;
+
+
+
+}
+
+#burger_knap:hover {
+	font-size: 2.8rem;
+	color: rgba(250, 250, 250, 0.9);
+	transition: 0.3s;
+}
+
+a {
+	text-decoration: none;
+	font-family: 'Contrail One', cursive;
+
+}
+
+#menu a {
+	color: white;
+	text-decoration: none;
+	font-size: 1.8rem;
+
+}
+
+#menu p:hover {
+	font-size: 2.3rem;
+	color: rgba(250, 250, 250, 0.9);
+	transition: 0.3s;
+}
+
+#luk {
+	color: rgba(250, 250, 250, 0.9);
+	font-size: 2rem;
+	cursor: pointer;
+}
+
+
+
+#luk:hover {
+	font-size: 2.3rem;
+	color: rgba(250, 250, 250, 0.9);
+	transition: 0.3s;
+}
+
+
+
+header p {
+	font-family: 'Contrail One', cursive;
+	color: white;
+	font-size: 1.5rem;
+}
+
+.nav_mob p:hover {
+	font-size: 1.8rem;
+	color: rgba(250, 250, 250, 0.9);
+	transition: 0.3s;
+
+}
+
+header p:hover {
+	transform: scale(1.1);
+	transition: 0.3s;
+	color: rgba(250, 250, 250, 0.9);
+
+}
+
+
+header {
+	height: 8vh;
+	background-color: #2b9186;
+	z-index: 5;
+	width: 100%;
+	top: 0vw;
+	border-radius: 0px 0px 5px 5px;
+
+
+
+}
+
+video {
+	width: 100%;
+	border-radius: 20px;
+	border: 0.25rem solid #2b9186;
+	border-width: 5px;
+	border-style: ridge;
+}
+
+
+
+.nav_mob {
+	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 8vh;
+	text-decoration: none;
+	top: 0;
+
+
+
+}
+
+.nav_web {
+	display: none;
+}
+
+
+
+#logo img {
+
+	margin-left: 2rem;
+	height: 30vh;
+	width: 40vw;
+
+
+
+
+}
+
+
+
+/* Portfolioside styling*/
+
+#portfolio {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	height: 100%;
+	min-height: 100vh;
+	padding: 1rem;
+	background-color: #E6FFFB;
+	min-height: 100vh;
+
+
+}
+
+.col_small p {
+	font-size: 1.5rem;
+	font-family: 'Didact Gothic', sans-serif;
+	color: #121010;
+
+}
+
+.col_small .dokumentationsknap p {
+	color: white;
+	font-family: 'Contrail One', cursive;
+}
+
+.col_small .gaa_til_knap p {
+	color: white;
+	font-family: 'Contrail One', cursive;
+
+}
+
+
+/* Kode til billedtekst er fundet på nettet, og lavet til min egen kodning*/
+.billedbeskrivelse,
+.billedbeskrivelse1,
+.billedbeskrivelse2,
+.billedbeskrivelse3,
+.billedbeskrivelse4 {
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+
+
+
+
+.billedbeskrivelse img {
+	max-width: 100%;
+	height: 20.2rem;
+	border-radius: 20px;
+	border: 0.25rem solid #2b9186;
+	border-width: 5px;
+	border-style: ridge;
+}
+
+.billedbeskrivelse1 img {
+	max-width: 100%;
+	height: 20.2rem;
+	border-radius: 20px;
+	border: 0.25rem solid #2daa75;
+	border-width: 5px;
+	border-style: ridge;
+	cursor: pointer;
+}
+
+.billedbeskrivelse2 img {
+	max-width: 100%;
+	height: 20.2rem;
+	border-radius: 20px;
+	border: 0.5rem solid #43cbb6;
+	border-width: 5px;
+	border-style: ridge;
+	cursor: pointer;
+}
+
+.billedbeskrivelse3 img {
+	max-width: 100%;
+	height: 20.2rem;
+	border-radius: 20px;
+	border: 0.25rem solid #329fd0;
+	border-width: 5px;
+	border-style: ridge;
+	cursor: pointer;
+}
+
+.billedbeskrivelse4 img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 20px;
+	border: 0.25rem solid #0a73de;
+	border-width: 5px;
+	border-style: ridge;
+	cursor: pointer;
+}
+
+
+
+.billedtekst {
+	opacity: 1;
+	position: absolute;
+	width: 100%;
+	color: white;
+	bottom: 20%;
+	padding: 1rem;
+	font-weight: 500;
+	z-index: 2;
+	background-color: rgba(0, 0, 0, 0.83);
+	transition: opacity 0.3s ease-in-out;
+	text-align: center;
+	font-family: 'Contrail One', cursive;
+}
+
+.billedtekst2 {
+	opacity: 0;
+	position: absolute;
+	width: 100%;
+	color: white;
+	bottom: 20%;
+	padding: 1rem;
+	font-weight: 500;
+	z-index: 2;
+	background-color: rgba(43, 145, 134, 0.83);
+	transition: opacity 0.3s ease-in-out;
+	text-align: center;
+	font-family: 'Contrail One', cursive;
+}
+
+.billedbeskrivelse:hover .billedtekst {
+	opacity: 0;
+}
+
+.billedbeskrivelse1:hover .billedtekst {
+	opacity: 0;
+}
+
+.billedbeskrivelse2:hover .billedtekst {
+	opacity: 0;
+}
+
+.billedbeskrivelse3:hover .billedtekst {
+	opacity: 0;
+}
+
+.billedbeskrivelse4:hover .billedtekst {
+	opacity: 0;
+}
+
+.billedbeskrivelse:hover .billedtekst2 {
+	opacity: 1;
+
+
+}
+
+.billedbeskrivelse1:hover .billedtekst2 {
+	opacity: 1;
+
+
+}
+
+.billedbeskrivelse2:hover .billedtekst2 {
+	opacity: 1;
+
+
+}
+
+.billedbeskrivelse3:hover .billedtekst2 {
+	opacity: 1;
+
+
+}
+
+.billedbeskrivelse4:hover .billedtekst2 {
+	opacity: 1;
+
+
+}
+
+.billedbeskrivelse:hover {
+
+	transform: scale(1.01);
+
+}
+
+
+
+section {
+	max-width: 1200px;
+	margin: auto;
+}
+
+.col_portfolio {
+	flex-basis: 200px;
+	flex-grow: 1;
+	max-width: 350px;
+	margin: 1rem;
+
+}
+
+
+
+#portfolio .sectionwrapper {
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+
+/* Styling til indhold i alle projekter*/
+
+#portfolio .col_big {
+	flex-grow: 1;
+	flex-basis: 200px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+
+	margin-top: 11rem;
+
+
+
+
+}
+
+
+
+
+#portfolio .col_small {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	flex-basis: 200px;
+	flex-grow: 1;
+	padding: 1rem;
+	margin: 2rem;
+}
+
+
+
+#portfolio .gaa_til_knap {
+	width: 20rem;
+	height: 3rem;
+	border-radius: 0.9rem;
+	text-align: center;
+	margin: auto;
+
+
+
+}
+
+.gaa_til_knap p {
+	text-decoration: none;
+}
+
+#portfolio .dokumentationsknap {
+	width: 20rem;
+	height: 3rem;
+	border-radius: 0.9rem;
+	text-align: center;
+	margin: auto;
+
+
+}
+
+#animation .dokumentationsknap {
+	width: 20rem;
+	height: 3rem;
+	border-radius: 0.9rem;
+	text-align: center;
+	margin: auto;
+	background-color: #08895e;
+	color: whitesmoke;
+
+}
+
+#animation .dokumentationsknap:hover {
+	background-color: rgba(8, 137, 94, 0.8);
+
+}
+
+
+
+
+
+#portfolio .col_portfolio:hover {
+	transition: .4s ease;
+	transform: scale(1.06);
+
+}
+
+
+
+.projekter {
+	width: 100%;
+	padding: 2rem;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+
+
+
+}
+
+
+#tilbage {
+	position: absolute;
+	width: 7vw;
+	height: 6vw;
+	position: fixed;
+	cursor: pointer;
+	padding: 1rem;
+
+}
+
+#tilbage:hover {
+	transform: scale(1.2);
+
+}
+
+
+/*Forside*/
+#forside {
+	text-align: center;
+	height: 100%;
+
+}
+
+#forside a {
+	margin-top: 2rem;
+	z-index: 3;
+	font-size: 3rem;
+	font-family: 'Permanent Marker', cursive;
+	color: #2b9186;
+	text-decoration: none;
+
+}
+
+#forside a:hover {
+	color: rgba(43, 145, 134, 0.85);
+	font-size: 3.2rem;
+
+
+}
+
+/*CV*/
+
+
+
+
+#cv h1 {
+	justify-content: center;
+	display: flex;
+	font-size: 4rem;
+}
+
+#cv .sectionwrapper {
+	border: 0.25rem solid #2b9186;
+	border-radius: 20px;
+	margin-top: 2rem;
+	background-color: white;
+	border-width: 10px;
+	border-style: ridge;
+
+
+
+}
+
+#cv img {
+	border-radius: 20px;
+}
+
+#cv p {
+	font-size: 2rem;
+	font-family: 'Didact Gothic', sans-serif;
+
+}
+
+#cv .col_big {
+	margin: 0.5rem;
+
+}
+
+
+
+/* Tema 1- Grundlæggende web*/
+
+#artsandcrafts {
+	border: 0.25rem solid #2daa75;
+	border-radius: 20px;
+	background-color: white;
+	border-width: 5px;
+	border-style: ridge;
+	margin-top: 2rem;
+
+}
+
+#artsandcrafts .gaa_til_knap {
+
+	color: whitesmoke;
+
+	background-color: #2b9186;
+}
+
+#artsandcrafts .gaa_til_knap:hover {
+	background-color: rgba(47, 111, 89, 0.8);
+
+}
+
+#artsandcrafts .dokumentationsknap {
+	background-color: #08895e;
+	color: whitesmoke;
+}
+
+#artsandcrafts img {
+	border-style: ridge;
+	border-radius: 20px;
+	border: 0.25rem solid #2daa75;
+	border-width: 5px;
+
+}
+
+
+
+#artsandcrafts .dokumentationsknap:hover {
+	background-color: rgba(8, 137, 94, 0.8);
+
+}
+
+/* Tema 2- Animation*/
+#animation .col_big p {
+	font-size: 1.4rem;
+	font-family: 'Didact Gothic', sans-serif;
+	font-style: oblique;
+	color: #121010;
+}
+
+/* Kaptajn Krads */
+
+#kaptajnkrads {
+	border: 0.5rem solid #43cbb6;
+	border-style: ridge;
+	border-radius: 20px;
+	margin-top: 2rem;
+	padding: 3rem;
+	background-color: white;
+
+
+}
+
+#kaptajnkrads .gaa_til_knap {
+
+	background-color: #2b9186;
+
+
+
+}
+
+#kaptajnkrads .gaa_til_knap:hover {
+	background-color: rgba(43, 145, 134, 0.85);
+
+}
+
+#kaptajnkrads video {
+	border: 0.5rem solid #43cbb6;
+	border-style: ridge;
+	border-radius: 5px;
+	border-radius: 20px;
+}
+
+/* Share with care*/
+#sexogsamfund {
+	border: 0.5rem solid #43cbb6;
+
+	border-radius: 20px;
+	padding: 3rem;
+	margin-top: 2rem;
+	background-color: white;
+	border-style: ridge;
+}
+
+#sexogsamfund .gaa_til_knap {
+	background-color: #2b9186;
+	color: whitesmoke;
+
+
+}
+
+#sexogsamfund .gaa_til_knap:hover {
+	background-color: rgba(43, 145, 134, 0.85);
+}
+
+#sexogsamfund video {
+	border: 0.5rem solid #43cbb6;
+	border-style: ridge;
+	border-radius: 5px;
+	border-radius: 20px;
+}
+
+/* Tema 3- Content*/
+
+
+#content {
+	background-color: white;
+	border-radius: 20px;
+	margin-top: 2rem;
+	border: 0.25rem solid #329fd0;
+	border-width: 5px;
+	border-style: ridge;
+
+}
+
+
+#content .gaa_til_knap {
+	background-color: #2b9186;
+	color: whitesmoke;
+
+
+}
+
+#content .gaa_til_knap:hover {
+	background-color: rgba(43, 145, 134, 0.85);
+
+}
+
+
+#content video {
+	border: 0.25rem solid #329fd0;
+	border-width: 5px;
+	border-style: ridge;
+}
+
+/* Tema 4- UX*/
+
+#web_prototype {
+	border: 0.25rem solid #0a73de;
+	padding: 2rem;
+	margin-top: 2rem;
+	border-radius: 20px;
+	background-color: white;
+	border-width: 5px;
+	border-style: ridge;
+
+
+}
+
+
+
+#web_prototype .projekter {
+	padding: 1rem;
+
+}
+
+#nativeapp .projekter {
+	padding: 1rem;
+
+}
+
+#web_prototype .gaa_til_knap {
+	background-color: #2f6f59;
+	color: whitesmoke;
+
+
+}
+
+#web_prototype .gaa_til_knap:hover {
+	background-color: rgba(47, 111, 89, 0.8);
+
+}
+
+#web_prototype video {
+	border: 0.25rem solid #0a73de;
+	border-width: 5px;
+	border-style: ridge;
+}
+
+/*Native app*/
+
+
+#nativeapp {
+	border: 0.25rem solid #0a73de;
+	margin-top: 2rem;
+	padding: 2rem;
+	border-radius: 20px;
+	background-color: white;
+	border-width: 5px;
+	border-style: ridge;
+
+}
+
+#nativeapp .gaa_til_knap {
+	background-color: #2b9186;
+	color: whitesmoke;
+
+
+}
+
+#nativeapp .gaa_til_knap:hover {
+	background-color: rgba(43, 145, 134, 0.85);
+
+}
+
+#nativeapp video {
+	border: 0.25rem solid #0a73de;
+	border-width: 5px;
+	border-style: ridge;
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+	#portfolio .col_big {
+		margin-top: 2rem;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+	#burger_knap {
+		font-size: 3.5rem;
+	}
+
+	#burger_knap:hover {
+		font-size: 4rem;
+		color: rgba(250, 250, 250, 0.9);
+		transition: 0.3s;
+	}
+
+}
+
+
+
+
+
+
+@media only screen and (min-width: 800px) {
+	#forside a {
+		right: 10vw;
+		bottom: 8vw;
+		margin-bottom: 0;
+		font-size: 4rem;
+		font-family: 'Permanent Marker', cursive;
+		position: absolute;
+		color: #2b9186;
+	}
+
+	#forside a:hover {
+		color: rgba(43, 145, 134, 0.85);
+		font-size: 4.2rem;
+
+
+	}
+
+	.h1boks h1 {
+
+		font-size: 4rem;
+
+
+	}
+
+
+
+
+}
+
+@media only screen and (min-width: 900px) {
+	.nav_web {
+
+		height: 8vh;
+		top: 0;
+		display: flex;
+		flex-wrap: nowrap;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		margin-right: 2rem;
+
+	}
+
+	.nav_web a {
+		text-decoration: none;
+		color: white;
+		font-size: 1.5rem;
+		padding: 0.8rem;
+		font-weight: 600;
+		cursor: pointer;
+	}
+
+	.nav_web a:hover {
+
+		font-size: 1.8rem;
+		color: rgba(250, 250, 250, 0.9);
+		transition: 0.3s;
+
+	}
+
+	.nav_mob {
+		display: none;
+	}
+
+
+}
