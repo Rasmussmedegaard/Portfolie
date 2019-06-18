@@ -21,26 +21,7 @@ img {
 }
 
 
-.h1boks {
-	background-image: url(images/overskrift-baggrund.svg);
-	background-size: contain;
-	background-position: center;
-	height: 100%;
-	background-repeat: no-repeat;
-	width: 100%;
-	align-content: center;
 
-}
-
-
-
-.h1boks h1 {
-	text-align: center;
-	font-family: 'Permanent Marker', cursive;
-	font-size: 3rem;
-
-
-}
 
 /*Burgermenu*/
 .hidden {
@@ -68,27 +49,6 @@ img {
 #menu p {
 	font-family: 'Contrail One', cursive;
 }
-
-
-
-
-h3 {
-
-	font-size: 2rem;
-	font-family: 'Contrail One', cursive;
-}
-
-h2 {
-	font-size: 3rem;
-
-	font-family: 'Contrail One', cursive;
-}
-
-.col_small h2 {
-	border-bottom: 0.75px solid black;
-
-}
-
 
 #burger_knap {
 	color: white;
@@ -143,6 +103,48 @@ a {
 	transition: 0.3s;
 }
 
+/* Overskrifter*/
+
+h3 {
+
+	font-size: 2rem;
+	font-family: 'Contrail One', cursive;
+}
+
+h2 {
+	font-size: 3rem;
+
+	font-family: 'Contrail One', cursive;
+}
+
+.h1boks {
+	background-image: url(images/overskrift-baggrund.svg);
+	background-size: contain;
+	background-position: center;
+	height: 100%;
+	background-repeat: no-repeat;
+	width: 100%;
+	align-content: center;
+
+}
+
+
+
+.h1boks h1 {
+	text-align: center;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 3rem;
+
+
+}
+
+.col_small h2 {
+	border-bottom: 0.75px solid black;
+
+}
+
+
+/* Header*/
 
 
 header p {
@@ -178,16 +180,6 @@ header {
 
 }
 
-video {
-	width: 100%;
-	border-radius: 20px;
-	border: 0.25rem solid #2b9186;
-	border-width: 5px;
-	border-style: ridge;
-}
-
-
-
 .nav_mob {
 	width: 100%;
 	display: flex;
@@ -220,6 +212,33 @@ video {
 
 }
 
+#tilbage {
+	position: absolute;
+	width: 7vw;
+	height: 6vw;
+	position: fixed;
+	cursor: pointer;
+	padding: 1rem;
+
+}
+
+#tilbage:hover {
+	transform: scale(1.2);
+
+}
+
+/* Video*/
+
+video {
+	width: 100%;
+	border-radius: 20px;
+	border: 0.25rem solid #2b9186;
+	border-width: 5px;
+	border-style: ridge;
+}
+
+
+
 
 
 /* Portfolioside styling*/
@@ -233,6 +252,17 @@ video {
 	padding: 1rem;
 	background-color: #E6FFFB;
 	min-height: 100vh;
+
+
+}
+
+.projekter {
+	width: 100%;
+	padding: 2rem;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+
 
 
 }
@@ -255,6 +285,81 @@ video {
 
 }
 
+section {
+	max-width: 1200px;
+	margin: auto;
+}
+
+.col_portfolio {
+	flex-basis: 200px;
+	flex-grow: 1;
+	max-width: 350px;
+	margin: 1rem;
+
+}
+
+
+
+#portfolio .sectionwrapper {
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+#portfolio .col_big {
+	flex-grow: 1;
+	flex-basis: 200px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+
+	margin-top: 11rem;
+
+
+
+
+}
+
+
+
+
+#portfolio .col_small {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	flex-basis: 200px;
+	flex-grow: 1;
+	padding: 1rem;
+	margin: 2rem;
+}
+
+
+
+#portfolio .gaa_til_knap {
+	width: 20rem;
+	height: 3rem;
+	border-radius: 0.9rem;
+	text-align: center;
+	margin: auto;
+
+
+
+}
+
+.gaa_til_knap p {
+	text-decoration: none;
+}
+
+#portfolio .dokumentationsknap {
+	width: 20rem;
+	height: 3rem;
+	border-radius: 0.9rem;
+	text-align: center;
+	margin: auto;
+
+
+}
 
 /* Kode til billedtekst er fundet på nettet, og lavet til min egen kodning*/
 .billedbeskrivelse,
@@ -408,167 +513,12 @@ video {
 }
 
 
-
-section {
-	max-width: 1200px;
-	margin: auto;
-}
-
-.col_portfolio {
-	flex-basis: 200px;
-	flex-grow: 1;
-	max-width: 350px;
-	margin: 1rem;
-
-}
-
-
-
-#portfolio .sectionwrapper {
-	justify-content: center;
-	display: flex;
-	flex-wrap: wrap;
-
-}
-
-
-/* Styling til indhold i alle projekter*/
-
-#portfolio .col_big {
-	flex-grow: 1;
-	flex-basis: 200px;
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-
-	margin-top: 11rem;
-
-
-
-
-}
-
-
-
-
-#portfolio .col_small {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	flex-basis: 200px;
-	flex-grow: 1;
-	padding: 1rem;
-	margin: 2rem;
-}
-
-
-
-#portfolio .gaa_til_knap {
-	width: 20rem;
-	height: 3rem;
-	border-radius: 0.9rem;
-	text-align: center;
-	margin: auto;
-
-
-
-}
-
-.gaa_til_knap p {
-	text-decoration: none;
-}
-
-#portfolio .dokumentationsknap {
-	width: 20rem;
-	height: 3rem;
-	border-radius: 0.9rem;
-	text-align: center;
-	margin: auto;
-
-
-}
-
-#animation .dokumentationsknap {
-	width: 20rem;
-	height: 3rem;
-	border-radius: 0.9rem;
-	text-align: center;
-	margin: auto;
-	background-color: #08895e;
-	color: whitesmoke;
-
-}
-
-#ux .dokumentationsknap {
-	width: 20rem;
-	height: 3rem;
-	border-radius: 0.9rem;
-	text-align: center;
-	margin: auto;
-	background-color: #08895e;
-	color: whitesmoke;
-
-}
-
-#ux .dokumentationsknap:hover {
-	width: 20rem;
-	height: 3rem;
-	border-radius: 0.9rem;
-	text-align: center;
-	margin: auto;
-	background-color: #08895e;
-	color: whitesmoke;
-
-}
-
-#ux .dokumentationsknap:hover {
-	background-color: rgba(8, 137, 94, 0.8);
-
-}
-
-#animation .dokumentationsknap:hover {
-	background-color: rgba(8, 137, 94, 0.8);
-
-}
-
-
-
-
-
 #portfolio .col_portfolio:hover {
 	transition: .4s ease;
 	transform: scale(1.06);
 
 }
 
-
-
-.projekter {
-	width: 100%;
-	padding: 2rem;
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-
-
-
-}
-
-
-#tilbage {
-	position: absolute;
-	width: 7vw;
-	height: 6vw;
-	position: fixed;
-	cursor: pointer;
-	padding: 1rem;
-
-}
-
-#tilbage:hover {
-	transform: scale(1.2);
-
-}
 
 
 /*Forside*/
@@ -693,6 +643,23 @@ section {
 	color: #121010;
 }
 
+
+#animation .dokumentationsknap {
+	width: 20rem;
+	height: 3rem;
+	border-radius: 0.9rem;
+	text-align: center;
+	margin: auto;
+	background-color: #08895e;
+	color: whitesmoke;
+
+}
+
+#animation .dokumentationsknap:hover {
+	background-color: rgba(8, 137, 94, 0.8);
+
+}
+
 /* Kaptajn Krads */
 
 #kaptajnkrads {
@@ -790,6 +757,36 @@ section {
 
 /* Tema 4- UX*/
 
+
+#ux .dokumentationsknap {
+	width: 20rem;
+	height: 3rem;
+	border-radius: 0.9rem;
+	text-align: center;
+	margin: auto;
+	background-color: #08895e;
+	color: whitesmoke;
+
+}
+
+#ux .dokumentationsknap:hover {
+	width: 20rem;
+	height: 3rem;
+	border-radius: 0.9rem;
+	text-align: center;
+	margin: auto;
+	background-color: #08895e;
+	color: whitesmoke;
+
+}
+
+#ux .dokumentationsknap:hover {
+	background-color: rgba(8, 137, 94, 0.8);
+
+}
+
+/* Web prototype*/
+
 #web_prototype {
 	border: 0.25rem solid #0a73de;
 	padding: 2rem;
@@ -805,11 +802,6 @@ section {
 
 
 #web_prototype .projekter {
-	padding: 1rem;
-
-}
-
-#nativeapp .projekter {
 	padding: 1rem;
 
 }
@@ -864,7 +856,12 @@ section {
 	border-style: ridge;
 }
 
+#nativeapp .projekter {
+	padding: 1rem;
 
+}
+
+/* Media query*/
 
 
 
@@ -968,6 +965,5 @@ section {
 	.nav_mob {
 		display: none;
 	}
-
 
 }
