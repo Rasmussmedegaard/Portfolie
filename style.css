@@ -499,6 +499,33 @@ section {
 
 }
 
+#ux .dokumentationsknap {
+	width: 20rem;
+	height: 3rem;
+	border-radius: 0.9rem;
+	text-align: center;
+	margin: auto;
+	background-color: #08895e;
+	color: whitesmoke;
+
+}
+
+#ux .dokumentationsknap:hover {
+	width: 20rem;
+	height: 3rem;
+	border-radius: 0.9rem;
+	text-align: center;
+	margin: auto;
+	background-color: #08895e;
+	color: whitesmoke;
+
+}
+
+#ux .dokumentationsknap:hover {
+	background-color: rgba(8, 137, 94, 0.8);
+
+}
+
 #animation .dokumentationsknap:hover {
 	background-color: rgba(8, 137, 94, 0.8);
 
@@ -552,12 +579,18 @@ section {
 }
 
 #forside a {
-	margin-top: 2rem;
+
 	z-index: 3;
 	font-size: 3rem;
 	font-family: 'Permanent Marker', cursive;
 	color: #2b9186;
 	text-decoration: none;
+	margin-top: 4rem;
+
+
+	position: absolute;
+
+
 
 }
 
@@ -855,7 +888,19 @@ section {
 }
 
 
+@media only screen and (min-width: 700px) {
+	#forside a {
+		margin-top: 0;
+		font-size: 4rem;
+	}
 
+	#forside a:hover {
+		color: rgba(43, 145, 134, 0.85);
+		font-size: 4.2rem;
+
+
+	}
+}
 
 
 
@@ -864,7 +909,7 @@ section {
 		right: 10vw;
 		bottom: 8vw;
 		margin-bottom: 0;
-		font-size: 4rem;
+		font-size: 5rem;
 		font-family: 'Permanent Marker', cursive;
 		position: absolute;
 		color: #2b9186;
@@ -872,7 +917,7 @@ section {
 
 	#forside a:hover {
 		color: rgba(43, 145, 134, 0.85);
-		font-size: 4.2rem;
+		font-size: 5.2rem;
 
 
 	}
