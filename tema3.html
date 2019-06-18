@@ -4,6 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="noindex">
 	<title>Tema 3</title>
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
@@ -16,8 +17,8 @@
 	<header>
 		<div class="nav_web">
 			<a href="forside.html">
-				<div id="logo">
-					<img src="images/Logo.svg">
+				<div class="logo">
+					<img src="images/Logo.svg" alt="logo">
 				</div>
 			</a>
 			<a href="forside.html">
@@ -47,8 +48,8 @@
 		</div>
 		<div class="nav_mob">
 			<a href="forside.html">
-				<div id="logo">
-					<img src="images/Logo.svg">
+				<div class="logo">
+					<img src="images/Logo.svg" alt="logo">
 				</div>
 			</a>
 			<span id="burger_knap">☰</span>
@@ -84,13 +85,14 @@
 
 
 	</nav>
-	<div id="tilbage"><img src="images/Tilbage.svg"></div>
+	<div id="tilbage"><img src="images/Tilbage.svg" alt="tilbage"></div>
 	<!----------Tema 2---------->
 	<main id="portfolio">
-		<div class="h1boks">
-			<h1>Tema 3: Content</h1>
-		</div>
 		<div id="content">
+			<div class="h1boks">
+				<h1>Tema 3: Content</h1>
+			</div>
+
 
 			<div id="pilot_video" class="projekter">
 				<div class="col_small">
@@ -100,7 +102,7 @@
 					<p>Til dette forløb brugte vi vores viden omkring interviewteknik og videoredigering, til at udarbejde et interview med b-rolls. Interviewet omhandlede vores animationsprojekt for Sex og Samfund. Jeg brugte Premiere Pro til at redigere interviewet, hvor jeg lærte at sætte diverse klip ind på interviewet, samt at synkronisere lyden fra min mikrofon med videoen.
 
 					</p>
-					<p>Hvis jeg skulle have gjort noget anderledes, ville jeg have ændret lidt på billedbeskæringen, så der var mere luft over mit hoved. Billedet kan godt virke lidt klemt pga. billedbeskæringen.</p>
+					<p>Hvis jeg skulle have gjort noget anderledes, ville jeg have ændret lidt på billedbeskæringen, så der var mere luft over mit hoved. Billederne med mig i fokus kan godt virke lidt klemt pga. billedbeskæringen.</p>
 
 
 
@@ -119,21 +121,18 @@
 						<video preload="auto" muted="muted">
 							<source src="Video/pilotprojekt.mp4" type="video/mp4"></video>
 						<a href="https://www.youtube.com/watch?v=9uDWIOscIGU&list=PLHvG9QDAyDyO60AgGrMfPfRrmh7YhOhg0&index=21">
-							<figcaption class="billedtekst2">Se videoen</figcaption>
+							<h3 class="billedtekst2">Se videoen</h3>
 						</a>
 					</figure>
+					<p>Hold musen over/klik for at se spillet videoen</p>
 
 
 				</div>
-
-
-
-
 
 			</div>
 		</div>
 
 	</main>
-
+	<footer>Rasmus Smedegaard Andersen, 1.Semester, KEA</footer>
 	<script src="script.js"></script>
 </body></html>

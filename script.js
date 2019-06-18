@@ -6,8 +6,10 @@ function sidenVises() {
 	console.log("sidenVises");
 
 	document.querySelector("#burger_knap").addEventListener("click", toggleMenu);
-	document.querySelector("#luk").addEventListener("click", toggleMenu);
 	document.querySelector("#tilbage").addEventListener("click", goBack);
+
+	document.querySelector("#luk").addEventListener("click", toggleMenu);
+
 
 
 

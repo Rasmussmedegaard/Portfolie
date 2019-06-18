@@ -39,8 +39,7 @@ img {
 	z-index: 10;
 	text-align: center;
 	right: 0;
-	top: 6rem;
-
+	border-radius: 0px 0px 20px 20px;
 
 
 
@@ -125,6 +124,7 @@ h2 {
 	background-repeat: no-repeat;
 	width: 100%;
 	align-content: center;
+	margin-top: 2rem;
 
 }
 
@@ -150,7 +150,7 @@ h2 {
 header p {
 	font-family: 'Contrail One', cursive;
 	color: white;
-	font-size: 1.5rem;
+	font-size: 1.8rem;
 }
 
 .nav_mob p:hover {
@@ -174,8 +174,22 @@ header {
 	z-index: 5;
 	width: 100%;
 	top: 0vw;
-	border-radius: 0px 0px 5px 5px;
 
+
+}
+
+
+footer {
+
+	height: 2vh;
+	background-color: #2b9186;
+	z-index: 5;
+	width: 100%;
+	bottom: 0;
+	text-align: center;
+	position: fixed;
+	color: white;
+	font-family: 'Contrail One', cursive;
 
 
 }
@@ -201,7 +215,7 @@ header {
 
 
 
-#logo img {
+.logo img {
 
 	margin-left: 2rem;
 	height: 30vh;
@@ -214,11 +228,12 @@ header {
 
 #tilbage {
 	position: absolute;
-	width: 7vw;
-	height: 6vw;
+	width: 7rem;
+	height: 6rem;
 	position: fixed;
 	cursor: pointer;
 	padding: 1rem;
+	margin-left: 2rem;
 
 }
 
@@ -251,7 +266,7 @@ video {
 	min-height: 100vh;
 	padding: 1rem;
 	background-color: #E6FFFB;
-	min-height: 100vh;
+
 
 
 }
@@ -262,6 +277,7 @@ video {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
+	margin-bottom: 2rem;
 
 
 
@@ -377,9 +393,9 @@ section {
 
 .billedbeskrivelse img {
 	max-width: 100%;
-	height: 20.2rem;
+	height: auto;
 	border-radius: 20px;
-	border: 0.25rem solid #2b9186;
+	border: 0.25rem solid #2daa75;
 	border-width: 5px;
 	border-style: ridge;
 }
@@ -398,7 +414,7 @@ section {
 	max-width: 100%;
 	height: 20.2rem;
 	border-radius: 20px;
-	border: 0.5rem solid #43cbb6;
+	border: 0.25rem solid #43cbb6;
 	border-width: 5px;
 	border-style: ridge;
 	cursor: pointer;
@@ -416,12 +432,13 @@ section {
 
 .billedbeskrivelse4 img {
 	max-width: 100%;
-	height: auto;
+	height: 20.2rem;
 	border-radius: 20px;
 	border: 0.25rem solid #0a73de;
 	border-width: 5px;
 	border-style: ridge;
 	cursor: pointer;
+
 }
 
 
@@ -525,8 +542,18 @@ section {
 #forside {
 	text-align: center;
 	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	height: 100%;
+	min-height: 100vh;
+	min-height: 100vh;
+
 
 }
+
+
+
 
 #forside a {
 
@@ -535,10 +562,7 @@ section {
 	font-family: 'Permanent Marker', cursive;
 	color: #2b9186;
 	text-decoration: none;
-	margin-top: 4rem;
-
-
-	position: absolute;
+	margin-top: 25rem;
 
 
 
@@ -619,15 +643,6 @@ section {
 	background-color: #08895e;
 	color: whitesmoke;
 }
-
-#artsandcrafts img {
-	border-style: ridge;
-	border-radius: 20px;
-	border: 0.25rem solid #2daa75;
-	border-width: 5px;
-
-}
-
 
 
 #artsandcrafts .dokumentationsknap:hover {
@@ -725,13 +740,13 @@ section {
 /* Tema 3- Content*/
 
 
-#content {
+#pilot_video {
 	background-color: white;
 	border-radius: 20px;
-	margin-top: 2rem;
 	border: 0.25rem solid #329fd0;
 	border-width: 5px;
 	border-style: ridge;
+	margin-top: 2rem;
 
 }
 
@@ -753,6 +768,13 @@ section {
 	border: 0.25rem solid #329fd0;
 	border-width: 5px;
 	border-style: ridge;
+}
+
+#content .col_big p {
+	font-size: 1.4rem;
+	font-family: 'Didact Gothic', sans-serif;
+	font-style: oblique;
+	color: #121010;
 }
 
 /* Tema 4- UX*/
@@ -785,6 +807,13 @@ section {
 
 }
 
+#ux .col_big p {
+	font-size: 1.4rem;
+	font-family: 'Didact Gothic', sans-serif;
+	font-style: oblique;
+	color: #121010;
+}
+
 /* Web prototype*/
 
 #web_prototype {
@@ -807,7 +836,7 @@ section {
 }
 
 #web_prototype .gaa_til_knap {
-	background-color: #2f6f59;
+	background-color: #2b9186;
 	color: whitesmoke;
 
 
@@ -869,6 +898,8 @@ section {
 	#portfolio .col_big {
 		margin-top: 2rem;
 	}
+
+
 }
 
 @media only screen and (min-width: 600px) {
@@ -882,12 +913,19 @@ section {
 		transition: 0.3s;
 	}
 
+	#forside a {
+		position: absolute;
+		right: 30vw;
+
+		margin-top: 20rem;
+	}
+
 }
 
 
 @media only screen and (min-width: 700px) {
 	#forside a {
-		margin-top: 0;
+		margin-top: 35rem;
 		font-size: 4rem;
 	}
 
@@ -904,8 +942,8 @@ section {
 @media only screen and (min-width: 800px) {
 	#forside a {
 		right: 10vw;
-		bottom: 8vw;
-		margin-bottom: 0;
+
+		bottom: 10vw;
 		font-size: 5rem;
 		font-family: 'Permanent Marker', cursive;
 		position: absolute;
